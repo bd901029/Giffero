@@ -1,0 +1,19 @@
+<resources>
+	<string name="app_name">Giffero</string>
+	<string name="picture">Picture</string>
+	<string name="description_info">Info</string>
+	<string name="request_permission">Giffero needs some important permissions.</string>
+	<string name="camera_error">This device doesn\'t support Camera2 API.</string>
+	<string name="gif_saved">GIF has been saved successfully.</string>
+	<string name="gif_not_saved">Failed to save GIF.</string>
+	<string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates how to use the Camera2 API to capture RAW
+            camera buffers and save them as DNG files.
+
+
+        ]]>
+    </string>
+</resources>

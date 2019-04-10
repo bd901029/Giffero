@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000"
+	tools:context=".ui.PreviewActivity">
+
+	<RelativeLayout
+		android:id="@+id/contentContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true">
+
+		<ImageView
+			android:id="@+id/photoView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+		<ImageButton
+			android:id="@+id/frameImageView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignTop="@+id/photoView"
+			android:layout_alignBottom="@+id/photoView"
+			android:background="@drawable/frame_0"
+			android:onClick="OnFrameBtnClicked"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="200px"
+		android:background="#F58220">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#00000000"
+			android:src="@drawable/logo"
+			android:padding="10dp"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/control"
+		android:layout_width="match_parent"
+		android:layout_height="200px"
+		android:layout_alignParentBottom="true"
+		android:weightSum="2">
+
+		<ImageButton
+			android:id="@+id/btnCancel"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="#E75050"
+			android:onClick="OnBackBtnClicked"
+			android:padding="20dp"
+			android:src="@drawable/btn_back" />
+
+		<ImageButton
+			android:id="@+id/btnSave"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="@color/control_background"
+			android:onClick="OnSaveBtnClicked"
+			android:padding="20dp"
+			android:src="@drawable/btn_save" />
+
+	</LinearLayout>
+
+</RelativeLayout>
